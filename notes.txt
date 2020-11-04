@@ -1,0 +1,115 @@
+// Pig Dice //
+
+Rules:
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
+
+If the player rolls a 1, they score nothing and it becomes the next player's turn.
+If the player rolls any other number, it is added to their turn total and the player's turn continues.
+If a player chooses to "hold", their turn total is added to their score, and it becomes the next player's turn.
+The first player to score 100 or more points wins.
+
+For example, the first player, Donald, begins a turn with a roll of 5. Donald could hold and score 5 points, but chooses to roll again. Donald rolls a 2, and could hold with a turn total of 7 points, 
+but chooses to roll again. Donald rolls a 1, and must end his turn without scoring. The next player, Alexis, rolls the sequence 4-5-3-5-5, after which she chooses to hold, and adds her turn total of 22 points to her score.
+
+
+First action of the game:
+
+Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold".
+
+Program needs to:
+
+Generate random numbers between 1-6.
+
+
+
+function playerRoll();
+  - If "1" - play is passed to player 2
+
+  - If 2-6 - add that number to the accumulator variable.
+        - If 'accumulator variable' === "100"
+        -then, current player wins game
+
+
+
+
+
+
+roll = 3
+
+
+
+// Ideas for Functions //
+function Contact(firstName, lastName, score) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.score = score;
+}
+
+
+
+function randomNum()  {
+  math.random();
+  return random;
+}
+
+
+
+
+
+function playerRoll(random);
+  let roll = random
+  let player1Total = 0
+
+  if (roll === 1) {
+    then turn passes to player 2;
+  }
+  else (roll === 2-6)  {
+    add roll to player1Total;
+  }
+
+
+
+
+
+"It will evaluate randomly generated to see if equal to 1"
+
+function randomNum() {
+  let roll = Math.floor(Math.random() * 7);
+    if (roll === 1) {
+      return false
+    } else if (roll )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Fold folds the innermost uncollapsed region at the cursor:
+Ctrl + Shift + [ on Windows and Linux
+⌥ + ⌘ + [ on macOS
+Unfold unfolds the collapsed region at the cursor:
+
+Ctrl + Shift + ] on Windows and Linux
+⌥ + ⌘ + ] on macOS
+Fold All folds all regions in the editor:
+
+Ctrl + (K => 0) (zero) on Windows and Linux
+⌘ + (K => 0) (zero) on macOS
+Unfold All unfolds all regions in the editor:
+
+Ctrl + (K => J) on Windows and Linux
+⌘ + (K => J) on macOS
