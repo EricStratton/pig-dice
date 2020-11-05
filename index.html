@@ -13,14 +13,25 @@
 <body>
   <div class="container">
     <h2>New Game!</h2>
-    <form id="userInput">
+    <form id="player1Roll">
       <button type="submit" class="btn-primary">Roll Dice</button>
-    <form id="nextPlayer">
+    </form>
+    <form id="player2Roll">
+      <button type="submit" class="btn-primary">Roll Dice</button>
+    </form>
+
+    <form id="player1Hold">
       <button type="submit" class="btn-pass">Hold</button>
     </form>
+    <form id="player2Hold">
+      <button type="submit" class="btn-pass">Hold</button>
+    </form>
+
     <div id="scoreBoard">
-      <p>Player 1 Score - <span class="player1"></span></p>
-      <p>Player 2 Score - <span class="player2"></span></p>
+      <p>Player 1 Turn Score - <span id="turnScorePlayer1"></span></p>
+      <p>Player 1 Total Score - <span id="totalScorePlayer1"></span></p>
+      <p>Player 2 Turn Score - <span id="turnScorePlayer2"></span></p>
+      <p>Player 2 Total Score - <span id="totalScorePlayer2"></span></p>
     </div>
     <div>
       <h3><span class="updatedScore"></span><h4>
@@ -41,29 +52,3 @@
 
 
 
-/*
-<label for="player1">Player 1 Name:</label>
-<input type="text" class="form-control" id="player-one-name" placeholder="[Enter Name Here]">
-
-<label for="player2">Player 2 Name:</label>
-<input type="text" class="form-control" id="player-two-name" placeholder="[Enter Name Here]">
-</form>
-
-
-<h2>Game Time!:</h2>
-<div class="player-area">
-<div class="player1Area">
-  <p>Player One!</p>
-  
-</div>
-<div class="player2Area">
-  <p>Player Two!</p>
-  <p>Ready? Go!</p>
-  <button type="submit" class="btn">ROLL</button>
-
-</div>
-
-</div>
-<input type="submit">
-</div>
-*/
