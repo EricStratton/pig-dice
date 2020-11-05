@@ -1,6 +1,7 @@
-// Pig Dice //
+// **Pig Dice** //
 
-Rules:
+// **RULES** //
+
 Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold":
 
 If the player rolls a 1, they score nothing and it becomes the next player's turn.
@@ -12,7 +13,7 @@ For example, the first player, Donald, begins a turn with a roll of 5. Donald co
 but chooses to roll again. Donald rolls a 1, and must end his turn without scoring. The next player, Alexis, rolls the sequence 4-5-3-5-5, after which she chooses to hold, and adds her turn total of 22 points to her score.
 
 
-First action of the game:
+// **FIRST ACTION OF GAME** //
 
 Each turn, a player repeatedly rolls a die until either a 1 is rolled or the player decides to "hold".
 
@@ -87,7 +88,13 @@ function randomNum() {
 
 
 
+// **IDEAS FOR FEATURES OF GAME** //
 
+player.property(add winning percentage, as well as show gamesWon/gamesPlayed values)
+
+player.properties(add Ranking among cohort of players)
+
+player.property.(add consecutive games won value)
 
 
 
@@ -113,3 +120,24 @@ Unfold All unfolds all regions in the editor:
 
 Ctrl + (K => J) on Windows and Linux
 ⌘ + (K => J) on macOS
+
+
+
+let player1;
+let player2;
+let turn = 5
+let turnTotal = 0
+
+function roll(turn) {
+  if (turn === 1) {
+    if (turn === player1) {
+      player1 = false;
+      player2 = true;
+    } else {
+      player2 = false;
+      player1 = true;
+    }
+  } else {
+    turnTotal += roll;
+  }  
+}
